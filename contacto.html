@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoDiseñoWeb2023</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+    <div id="header">
+
+       
+        <div class="container">
+
+            <nav>
+                <a href="index.html"><img src="Imagenes_Proyecto/Logo Entero.png" class="logonav"></a>
+
+                <ul id="sidemenu">
+
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="about.html">Acerca De</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    
+                </ul>
+               
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contáctanos</h1>
+        </div>
+
+    </section>
+
+    <section class="ubicacion">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6544.445508676076!2d-56.135819642703744!3d-34.90085902877388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f813e774eb719%3A0x8769ce852edae416!2sWTC%20Montevideo%20Free%20Zone!5e0!3m2!1ses-419!2suy!4v1693685624557!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contactanos">
+
+        <div class="row">
+            <div class="contact">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>WTC Free Zone Montevideo</h5>
+                        <p>Montevideo, Uruguay</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>(+598) 093 675 122</h5>
+                        <p>Lunes a Viernes, 9:00hs a 18:00hs</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5 class="email">mb.tecnologias.uy@gmail.com</h5>
+                        <p>Envíanos un E-Mail Con tu Consulta</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact">
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Ingrese Su Nombre" required>
+                    <input type="email" name="email"placeholder="Ingrese Su Correo Electónico" required>
+                    <input type="text" name="number"placeholder="Ingrese Su Teléfono" required>
+                    <textarea rows="10" name="message"placeholder="Mensaje"></textarea>
+                    <button type="submit" class="btnAbout"> Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-------FOOTER------>
+
+        <section class="footer">
+
+            <h4>Acerca de Nosotros</h4>
+            <p>Somos una empresa fresca y nueva establecida en Uruguay desde el año 2023.<br> Nuestro compromiso es impulsar tu negocio hacia el futuro, proporcionándote<br> las herramientas tecnológicas que necesitas para sobresalir en un mundo cada vez más conectado.</p>
+            
+            <div class="iconos">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+
+            <p>Hecho con <i class="fa fa-heart"></i> por Martín y Matías Blanco - 2ºBB</p>
+         </section>
+        
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function showMenu(){
+                sidemenu.style.right="0";
+            }
+            function hideMenu(){
+                sidemenu.style.right="-200px";
+            }
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProyectoDiseñoWeb2023</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+    <div id="header">
+
+       
+        <div class="container">
+
+            <nav>
+                <a href="index.html"><img src="Imagenes_Proyecto/Logo Entero.png" class="logonav"></a>
+
+                <ul id="sidemenu">
+
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="about.html">Acerca De</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    
+                </ul>
+               
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Acerca de <span>Nosotros</span></h1>
+        </div>
+
+    </section>
+
+
+    <!-------ABOUT US CONTENIDO------>
+
+    <section class="acerca-de">
+
+        <div class="row">
+            <div class="acerca">
+                <h1>Construímos el Futuro de tu Empresa</h1>
+                <p>En M&B, somos una empresa fresca y dinámica que combina dos pilares fundamentales en la era digital: el desarrollo de software de vanguardia y la instalación de redes de alto rendimiento. Nuestro compromiso es impulsar tu negocio hacia el futuro, proporcionándote las herramientas tecnológicas que necesitas para sobresalir en un mundo cada vez más conectado.</p>
+                    
+                <a href="servicios.html" class="btnAbout">EXPLORA AHORA</a>
+            </div>
+            <div class="acerca">
+                <img src="Imagenes_Proyecto/img-about.jpg" alt="">
+            </div>
+            
+
+        </div>
+
+    </section>
+        
+        
+    
+    
+    <!-------FOOTER------>
+
+        <section class="footer">
+
+            <h4>Acerca de Nosotros</h4>
+            <p>Somos una empresa fresca y nueva establecida en Uruguay desde el año 2023.<br> Nuestro compromiso es impulsar tu negocio hacia el futuro, proporcionándote<br> las herramientas tecnológicas que necesitas para sobresalir en un mundo cada vez más conectado.</p>
+            
+            <div class="iconos">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+
+            <p>Hecho con <i class="fa fa-heart"></i> por Martín y Matías Blanco - 2ºBB</p>
+         </section>
+        
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function showMenu(){
+                sidemenu.style.right="0";
+            }
+            function hideMenu(){
+                sidemenu.style.right="-200px";
+            }
+
+        </script>
+</body>
+</html>
