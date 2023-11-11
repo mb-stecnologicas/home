@@ -28,9 +28,18 @@ body{
 
 }
 
+.navBar ul li a{
+    color:rgb(109, 107, 107);
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    position:relative;
+}
+
 nav{
-    display: flex;
     align-items: center;
+    padding-top: 18px;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex:1;
@@ -39,7 +48,8 @@ nav{
 }
 
 .logonav{
-    width: 180px;
+    width: 250px;
+    padding-bottom: 20px;
 }
 
 nav ul li{
@@ -50,7 +60,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color:grey;
+    color:rgb(255, 255, 255);
     display: inline-block;
     text-decoration: none;
     font-size: 18px;
@@ -76,9 +86,9 @@ nav ul li a:hover::after{
 }
 
 .header-text p{
-
+    
     animation: fadeIn 3s;
-    margin-top: 30px;
+    margin-top: 70px;
     font-size: 35px;
     font-weight: 600;
     color: gray;
@@ -146,8 +156,8 @@ nav .fa{
     }
     nav ul{
         position:fixed;
-        background: #2bc90f;
-        color:white;
+        background: #a0ff8d;
+        color:rgb(255, 255, 255);
         top:0;
         right: -200px;
         width:200px;
@@ -161,6 +171,11 @@ nav .fa{
         display:block;
         margin: 25px;
     }
+
+    nav ul li a{
+        color:rgb(109, 107, 107);
+    }
+    
     nav ul .fas{
         position:absolute;
         top:25px;
@@ -476,11 +491,15 @@ h3{
 
     width:80%;
     margin:auto;
-    padding-top: 80px;
+    padding-top: 120px;
     padding-bottom: 50px;
+}
+.container h1{
+    padding-top: 50px;
 }
 .container h1 span{
     color:#3AD31E;
+    padding-top: 50px;   
 }
 .acerca{
 
